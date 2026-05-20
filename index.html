@@ -31,7 +31,7 @@
       height: 85vh; 
       min-height: 600px; 
       background: linear-gradient(135deg, rgba(26,26,26,0.7), rgba(26,26,26,0.5)), 
-                  url('images/header-meson.jpg') center/cover no-repeat; 
+                  url('header-meson.jpg') center/cover no-repeat; 
       display: flex; 
       align-items: center; 
       justify-content: center; 
@@ -480,18 +480,18 @@
     <section id="galeria">
       <div class="section-header"><h2 class="section-title">Galería</h2><p class="section-subtitle">Descubre nuestros platos</p></div>
       <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox(0)"><img src="images/plato1.jpg" alt="Interior del restaurante" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(1)"><img src="images/plato2.jpg" alt="Hamburguesa con bacon y patatas" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(2)"><img src="images/plato3.jpg" alt="Piquillo de atún" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(3)"><img src="images/plato4.jpg" alt="Parrillada de verduras" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(4)"><img src="images/plato5.jpg" alt="Carne a la plancha con patatas" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(5)"><img src="images/plato6.jpg" alt="Gambas al ajillo" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(6)"><img src="images/plato7.jpg" alt="Hamburguesa clásica" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(7)"><img src="images/plato8.jpg" alt="Pescado rebozado" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(8)"><img src="images/plato9.jpg" alt="Huevos con habas" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(9)"><img src="images/plato10.jpg" alt="Ensaladilla" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(10)"><img src="images/plato11.jpg" alt="Carne a la plancha" loading="lazy"></div>
-        <div class="gallery-item" onclick="openLightbox(11)"><img src="images/plato12.jpg" alt="Hamburguesa gourmet" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(0)"><img src="plato1.jpg" alt="Interior del restaurante" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(1)"><img src="plato2.jpg" alt="Hamburguesa con bacon y patatas" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(2)"><img src="plato3.jpg" alt="Piquillo de atún" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(3)"><img src="plato4.jpg" alt="Parrillada de verduras" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(4)"><img src="plato5.jpg" alt="Carne a la plancha con patatas" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(5)"><img src="plato6.jpg" alt="Gambas al ajillo" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(6)"><img src="plato7.jpg" alt="Hamburguesa clásica" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(7)"><img src="plato8.jpg" alt="Pescado rebozado" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(8)"><img src="plato9.jpg" alt="Huevos con habas" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(9)"><img src="plato10.jpg" alt="Ensaladilla" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(10)"><img src="plato11.jpg" alt="Carne a la plancha" loading="lazy"></div>
+        <div class="gallery-item" onclick="openLightbox(11)"><img src="plato12.jpg" alt="Hamburguesa gourmet" loading="lazy"></div>
       </div>
     </section>
 
@@ -565,18 +565,18 @@
   <script>
     // Galería con imágenes locales
     const galleryImages = [
-      'images/plato1.jpg',
-      'images/plato2.jpg',
-      'images/plato3.jpg',
-      'images/plato4.jpg',
-      'images/plato5.jpg',
-      'images/plato6.jpg',
-      'images/plato7.jpg',
-      'images/plato8.jpg',
-      'images/plato9.jpg',
-      'images/plato10.jpg',
-      'images/plato11.jpg',
-      'images/plato12.jpg'
+      'plato1.jpg',
+      'plato2.jpg',
+      'plato3.jpg',
+      'plato4.jpg',
+      'plato5.jpg',
+      'plato6.jpg',
+      'plato7.jpg',
+      'plato8.jpg',
+      'plato9.jpg',
+      'plato10.jpg',
+      'plato11.jpg',
+      'plato12.jpg'
     ];
     let currentImageIndex = 0;
     function openLightbox(index) { currentImageIndex = index; document.getElementById('lightboxImg').src = galleryImages[index]; document.getElementById('lightbox').classList.add('active'); document.body.style.overflow = 'hidden'; }
