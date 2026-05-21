@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Fin de Semana | Mesón La Colonia</title>
+    <style>
+        :root {
+            --marron-oscuro: #2c1810;
+            --marron: #5d4037;
+            --dorado: #c9a961;
+            --crema: #faf8f3;
+            --blanco: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--crema);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--marron-oscuro) 0%, var(--marron) 100%);
+            color: var(--dorado);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--dorado);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .precio-destacado {
+            font-size: 3rem;
+            color: var(--dorado);
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        nav {
+            background-color: var(--marron);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: var(--dorado);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--blanco);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--blanco);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .info-menu {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: var(--crema);
+            border-radius: 8px;
+            border: 2px solid var(--dorado);
+        }
+        
+        .info-menu p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .menu-section {
+            margin-bottom: 2rem;
+        }
+        
+        .menu-section h2 {
+            color: var(--marron-oscuro);
+            border-bottom: 2px solid var(--dorado);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .menu-item-name {
+            font-weight: 600;
+            color: var(--marron);
+            flex: 1;
+        }
+        
+        .menu-item-desc {
+            font-size: 0.9rem;
+            color: #666;
+            width: 60%;
+            margin-left: 1rem;
+        }
+        
+        .menu-item-price {
+            font-weight: bold;
+            color: var(--dorado);
+            font-size: 1.1rem;
+            min-width: 80px;
+            text-align: right;
+        }
+        
+        .btn-reservar {
+            display: inline-block;
+            background-color: var(--dorado);
+            color: var(--marron-oscuro);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-reservar:hover {
+            background-color: var(--marron-oscuro);
+            color: var(--dorado);
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .destacado {
+            background-color: var(--crema);
+            padding: 0.5rem;
+            border-left: 3px solid var(--dorado);
+            margin: 0.5rem 0;
+        }
+        
+        footer {
+            background-color: var(--marron-oscuro);
+            color: var(--dorado);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: var(--dorado);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mesón La Colonia</h1>
+        <p>MENÚ FIN DE SEMANA</p>
+        <div class="precio-destacado">25,00 €</div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu-diario.html">Menú del Día</a>
+        <a href="menu-fin-de-semana.html">Menú Fin de Semana</a>
+        <a href="index.html#reservas">Reservas</a>
+    </nav>
+    
+    <div class="container">
+        <div class="info-menu">
+            <p><strong>📅 Válido:</strong> Sábados y Domingos</p>
+            <p><strong>🕐 Horario:</strong> Todo el día (13:00 - 00:00 hrs)</p>
+            <p><strong>✅ Incluye:</strong> Primeros platos variados, Segundos platos especiales, Postre y Pan</p>
+        </div>
+        
+        <div class="menu-section">
+            <h2>🥗 Para Empezar</h2>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Ensaladilla Rusa Premium</div>
+                    <div class="menu-item-desc">Con langostinos y huevas</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Jamón Ibérico de Bellota</div>
+                    <div class="menu-item-desc">Corte especial</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Tabla de Quesos</div>
+                    <div class="menu-item-desc">Selección de quesos nacionales con membrillo</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Croquetas Variadas</div>
+                    <div class="menu-item-desc">Jamón, boletus y bacalao</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Pulpo a la Gallega</div>
+                    <div class="menu-item-desc">Sobre cama de patatas</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2>🥩 Platos Principales</h2>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Cochinillo Asado</div>
+                    <div class="menu-item-desc">Receta tradicional segoviana</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Chuletón de Buey</div>
+                    <div class="menu-item-desc">A la parrilla (consultar peso y precio)</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Bacalao al Pil-Pil</div>
+                    <div class="menu-item-desc">Receta tradicional vasca</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Paella Mixta</div>
+                    <div class="menu-item-desc">Para 2 personas (mínimo)</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Solomillo al Foie</div>
+                    <div class="menu-item-desc">Con salsa de oporto</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="menu-item-name">Marisco del Día</div>
+                    <div class="menu-item-desc">Consultar disponibilidad</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2>🍰 Postres Caseros</h2>
+            <div class="menu-item">
+                <div class="menu-item-name">Tarta de Queso Casera</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">Tarta de la Abuela</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">Torrija de la Casa</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">Surtido de Helados</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-name">Café, Infusión o Copa de Cava</div>
+            </div>
+        </div>
+        
+        <div class="center">
+            <a href="index.html#reservas" class="btn-reservar">📅 Reservar Mesa</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Mesón La Colonia. Todos los derechos reservados.</p>
+        <p><a href="aviso-legal.html">Aviso Legal</a> | <a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a></p>
+    </footer>
+</body>
+</html>
